@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Flashcard_Front">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/flashcardFrontTV"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:text="Flashcard Front"
+        android:autoSizeTextType="uniform"/>
+
+    <Button
+        android:id="@+id/checkAnswerBTN"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:text="Check"
+        android:autoSizeTextType="uniform"/>
+
+    <Button
+        android:id="@+id/homeBTN"
+        android:layout_width="233dp"
+        android:layout_height="75dp"
+        android:layout_gravity="right"
+        android:autoSizeTextType="uniform"
+        android:text="Home" />
+</LinearLayout>
