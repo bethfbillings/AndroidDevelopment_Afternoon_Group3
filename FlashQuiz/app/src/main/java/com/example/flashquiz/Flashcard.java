@@ -47,7 +47,7 @@ public class Flashcard {
 
     public String getPercentCorrect() {
         float correct = 0;
-        correct = timesCorrect / timesSeen;
+        correct = (float) timesCorrect / timesSeen;
         correct = correct * 100;
         return String.format("%.2f", correct); //2 decimal places
     }
