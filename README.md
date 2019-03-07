@@ -2,8 +2,8 @@
 Project for NWMSU Mobile Computing Android Spring Semester 2019
 
 ## MILESTONE 1 REQUIREMENTS NEEDED:
-*Finalized project proposal.
-*Identify any risky components 
-*Add GA and Hoot to repo.
-*Be able to navigate through all the layouts created
-*All of the team members have clearly defined contributions (commits to the repo) to the project.  
+* Finalized project proposal.
+* Identify any risky components 
+* Add GA and Hoot to repo.
+* Be able to navigate through all the layouts created
+* All of the team members have clearly defined contributions (commits to the repo) to the project.  
