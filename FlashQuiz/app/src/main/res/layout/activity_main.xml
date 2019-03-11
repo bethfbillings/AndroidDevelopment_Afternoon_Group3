@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Edit_Flashcard" >
+    tools:context=".MainActivity" >
 
     <TextView
         android:id="@+id/titleTV"
@@ -18,20 +18,23 @@
         android:id="@+id/startBTN"
         android:layout_width="match_parent"
         android:layout_height="99dp"
-        android:text="Start"
-        android:autoSizeTextType="uniform"/>
+        android:autoSizeTextType="uniform"
+        android:onClick="startButton"
+        android:text="Start" />
 
     <Button
         android:id="@+id/statisticsBTN"
         android:layout_width="match_parent"
         android:layout_height="99dp"
-        android:text="Statistics"
-        android:autoSizeTextType="uniform"/>
+        android:autoSizeTextType="uniform"
+        android:onClick="statisticsButton"
+        android:text="Statistics" />
 
     <Button
         android:id="@+id/editFlashcardsBTN"
         android:layout_width="match_parent"
         android:layout_height="99dp"
         android:text="Edit Flashcards"
+        android:onClick="editFlashcardButton"
         android:autoSizeTextType="uniform"/>
 </LinearLayout>
