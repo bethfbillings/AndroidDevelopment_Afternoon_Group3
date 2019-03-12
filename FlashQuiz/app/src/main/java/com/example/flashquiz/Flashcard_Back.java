@@ -16,4 +16,8 @@ public class Flashcard_Back extends AppCompatActivity {
 
 
     }
+    public void statsbut(View v) {
+        Intent goStats = new Intent(Flashcard_Back.this, Statistics.class);
+        Flashcard_Back.this.startActivity(goStats);
+    }
 }

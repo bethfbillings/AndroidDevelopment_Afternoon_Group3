@@ -86,7 +86,8 @@
         android:id="@+id/homeBTN"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:text="Home"
-        android:autoSizeTextType="uniform"/>
+        android:autoSizeTextType="uniform"
+        android:onClick="home"
+        android:text="Home" />
 
 </LinearLayout>

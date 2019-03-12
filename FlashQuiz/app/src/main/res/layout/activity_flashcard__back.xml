@@ -44,6 +44,7 @@
             android:layout_width="209dp"
             android:layout_height="95dp"
             android:autoSizeTextType="uniform"
+            android:onClick="statsbut"
             android:text="Statistics" />
 
         <Button
