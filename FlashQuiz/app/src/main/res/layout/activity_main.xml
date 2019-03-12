@@ -5,36 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".Edit_Flashcard" >
 
     <TextView
         android:id="@+id/titleTV"
         android:layout_width="match_parent"
-        android:layout_height="146dp"
+        android:layout_height="135dp"
+        android:autoSizeTextType="uniform"
+        android:background="@android:color/holo_orange_light"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:backgroundTintMode="screen"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center_horizontal"
+        android:hapticFeedbackEnabled="true"
         android:text="FlashQuiz"
-        android:autoSizeTextType="uniform"/>
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="87dp"
+        android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/startBTN"
         android:layout_width="match_parent"
         android:layout_height="99dp"
         android:autoSizeTextType="uniform"
-        android:onClick="startButton"
-        android:text="Start" />
+        android:text="Start"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/statisticsBTN"
         android:layout_width="match_parent"
-        android:layout_height="99dp"
+        android:layout_height="100dp"
         android:autoSizeTextType="uniform"
-        android:onClick="statisticsButton"
-        android:text="Statistics" />
+        android:text="Statistics"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/editFlashcardsBTN"
         android:layout_width="match_parent"
         android:layout_height="99dp"
+        android:autoSizeTextType="uniform"
         android:text="Edit Flashcards"
-        android:onClick="editFlashcardButton"
-        android:autoSizeTextType="uniform"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="30dp" />
 </LinearLayout>

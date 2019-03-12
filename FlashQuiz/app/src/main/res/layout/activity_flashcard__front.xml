@@ -8,18 +8,24 @@
     tools:context=".Flashcard_Front">
 
     <TextView
-        android:id="@+id/flashcardFrontTV"
         android:layout_width="match_parent"
-        android:layout_height="354dp"
+        android:layout_height="265dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif-condensed-light"
         android:text="Flashcard Front"
-        android:autoSizeTextType="uniform"/>
+        android:textColor="@android:color/holo_blue_light"
+        android:textColorHighlight="?attr/colorError"
+        android:textSize="10dp"
+        android:textStyle="bold|italic"
+        app:autoSizeTextType="uniform" />
 
     <Button
         android:id="@+id/checkAnswerBTN"
         android:layout_width="match_parent"
         android:layout_height="101dp"
+        android:autoSizeTextType="uniform"
         android:text="Check"
-        android:autoSizeTextType="uniform"/>
+        android:textSize="35dp" />
 
     <Button
         android:id="@+id/homeBTN"
@@ -27,5 +33,7 @@
         android:layout_height="75dp"
         android:layout_gravity="right"
         android:autoSizeTextType="uniform"
-        android:text="Home" />
+        android:text="Home"
+        android:textSize="35dp" />
+
 </LinearLayout>
