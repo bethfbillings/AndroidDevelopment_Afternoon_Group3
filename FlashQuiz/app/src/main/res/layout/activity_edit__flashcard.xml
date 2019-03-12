@@ -23,6 +23,13 @@
         android:layout_weight="1"
         android:autoSizeTextType="uniform"/>
 
+    <Button
+        android:id="@+id/frontImageBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:text="Add image to front." />
+
     <EditText
         android:id="@+id/editBackET"
         android:layout_width="match_parent"
@@ -34,10 +41,18 @@
         android:autoSizeTextType="uniform"/>
 
     <Button
+        android:id="@+id/backImageBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:text="Add image to back." />
+
+    <Button
         android:id="@+id/homeBTN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home"
-        android:autoSizeTextType="uniform"/>
+        android:autoSizeTextType="uniform"
+        android:onClick="goHome"
+        android:text="Home" />
 
 </LinearLayout>
