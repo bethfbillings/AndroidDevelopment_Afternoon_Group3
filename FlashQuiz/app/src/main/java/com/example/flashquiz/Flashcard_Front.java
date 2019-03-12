@@ -17,24 +17,24 @@ private Button check;
         check = (Button) findViewById(R.id.checkAnswerBTN);
         check.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
-                openback();
+                openback(v);
             }
         });
         home = (Button) findViewById(R.id.homeBTN);
         home.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
-                openhome();
+                openhome(v);
             }
         });
     }
 
-    public void openback() {
+    public void openback(View view) {
         Intent back = new Intent(this, Flashcard_Back.class);
         startActivityForResult(back, 1);
         startActivity(back);
     }
 
-    public void openhome() {
+    public void openhome(View view) {
         Intent home = new Intent(this, MainActivity.class);
         startActivityForResult(home, 1);
         startActivity(home);
