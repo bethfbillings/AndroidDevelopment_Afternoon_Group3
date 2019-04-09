@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".Statistics">
 
@@ -11,8 +12,12 @@
         android:id="@+id/statisticsTV"
         android:layout_width="match_parent"
         android:layout_height="76dp"
+        android:autoSizeTextType="uniform"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-black"
         android:text="Statistics"
-        android:autoSizeTextType="uniform"/>
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,16 +29,20 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:background="#47E142"
             android:text="Correct"
-            android:autoSizeTextType="uniform"/>
+            android:textSize="8sp"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/correctPercentTV"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="-%"
-            android:autoSizeTextType="uniform"/>
+            android:autoSizeTextType="uniform"
+            android:background="#FFFFFF"
+            android:text="-%" />
 
     </LinearLayout>
 
@@ -47,16 +56,19 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:background="#F43F35"
             android:text="Incorrect"
-            android:autoSizeTextType="uniform"/>
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/inoorrectPercentTV"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="-%"
-            android:autoSizeTextType="uniform"/>
+            android:autoSizeTextType="uniform"
+            android:background="#FFFFFF"
+            android:text="-%" />
 
     </LinearLayout>
 
@@ -70,21 +82,25 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:background="#ECA75D"
             android:text="Total"
-            android:autoSizeTextType="uniform"/>
+            android:textSize="10sp"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/totalCountTV"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="##"
-            android:autoSizeTextType="uniform"/>
+            android:autoSizeTextType="uniform"
+            android:background="#FFFFFF"
+            android:text="##" />
     </LinearLayout>
 
     <Button
         android:id="@+id/homeBTN"
-        android:layout_width="match_parent"
+        android:layout_width="130dp"
         android:layout_height="69dp"
         android:autoSizeTextType="uniform"
         android:onClick="home"

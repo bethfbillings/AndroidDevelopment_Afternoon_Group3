@@ -12,7 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="354dp"
         android:autoSizeTextType="uniform"
-        android:text="Flashcard Back" />
+        android:text="Flashcard Back"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        android:textStyle="italic" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,18 +25,24 @@
         <Button
             android:id="@+id/correctBTN"
             android:layout_width="209dp"
-            android:layout_height="95dp"
+            android:layout_height="70dp"
             android:autoSizeTextType="uniform"
+            android:background="#49EE33"
             android:onClick="open_front"
-            android:text="Correct" />
+            android:text="Correct"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <Button
             android:id="@+id/incorrectBTN"
             android:layout_width="match_parent"
-            android:layout_height="97dp"
+            android:layout_height="70dp"
             android:autoSizeTextType="uniform"
+            android:background="#F53C3C"
             android:onClick="open_front1"
-            android:text="Incorrect" />
+            android:text="Incorrect"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,7 +53,7 @@
         <Button
             android:id="@+id/statisticsBTN"
             android:layout_width="209dp"
-            android:layout_height="95dp"
+            android:layout_height="68dp"
             android:autoSizeTextType="uniform"
             android:onClick="open_stats"
             android:text="Statistics" />
@@ -52,7 +61,7 @@
         <Button
             android:id="@+id/homeBTN"
             android:layout_width="match_parent"
-            android:layout_height="97dp"
+            android:layout_height="68dp"
             android:autoSizeTextType="uniform"
             android:onClick="open_home"
             android:text="Home" />
