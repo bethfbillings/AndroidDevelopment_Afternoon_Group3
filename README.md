@@ -22,3 +22,5 @@ APK:
 ![apk image](Capture.PNG)
 
 
+Test Credentials: We do not have any test credentials for our app.
+
