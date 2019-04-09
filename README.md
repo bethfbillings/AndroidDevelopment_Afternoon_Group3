@@ -19,6 +19,6 @@ AppInfo: This app will help the user learn or memorize information, similar to h
 Supported Devices: The app should work for all android devices with the android versions above android 5.0(lollipop).
 
 APK: 
-![Capture.PNG](Apk Image)
+![apk image](Capture.PNG)
 
 
