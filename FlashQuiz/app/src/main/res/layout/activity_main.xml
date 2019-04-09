@@ -26,6 +26,7 @@
 
     <Button
         android:id="@+id/startBTN"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="99dp"
         android:autoSizeTextType="uniform"
