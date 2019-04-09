@@ -31,6 +31,15 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="353372386">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -51,6 +60,9 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
@@ -61,40 +73,123 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="AndroidDevelopment_Afternoon_Group3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidDevelopment_Afternoon_Group3-master" type="462c0819:PsiDirectoryNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AndroidDevelopment_Afternoon_Group3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidDevelopment_Afternoon_Group3-master" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="AfternooonMemory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AndroidDevelopment_Afternoon_Group3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidDevelopment_Afternoon_Group3-master" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="codeStyles" type="462c0819:PsiDirectoryNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="AfternooonMemory" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AndroidDevelopment_Afternoon_Group3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidDevelopment_Afternoon_Group3-master" type="462c0819:PsiDirectoryNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
               <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="flashquiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidDevelopment_Afternoon_Group3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidDevelopment_Afternoon_Group3" type="462c0819:PsiDirectoryNode" />
+              <item name="FlashQuiz" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/FlashQuiz" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -123,7 +218,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3296131" />
