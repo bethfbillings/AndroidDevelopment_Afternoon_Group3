@@ -26,7 +26,6 @@
 
     <Button
         android:id="@+id/startBTN"
-        style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="99dp"
         android:autoSizeTextType="uniform"
@@ -54,4 +53,10 @@
         android:textColor="@color/colorPrimaryDark"
         android:textColorLink="@color/colorPrimaryDark"
         android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        app:srcCompat="@drawable/students" />
 </LinearLayout>
