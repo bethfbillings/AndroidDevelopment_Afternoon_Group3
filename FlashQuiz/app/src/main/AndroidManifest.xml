@@ -3,6 +3,7 @@
     package="com.example.flashquiz">
 
     <application
+        android:name=".FlashcardsStack"
         android:allowBackup="true"
         android:icon="@mipmap/flashquiz_icon"
         android:roundIcon="@mipmap/flashquiz_icon_round"
