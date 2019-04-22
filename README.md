@@ -1,30 +1,23 @@
-NWMSU Mobile Computing Android Spring Semester 2019 
-Project - AndroidDevelopment_Afternoon_Group3
+# FlashQuiz 
+![FlashQuiz icon](flashquiz_icon.png)
 
-Team Members:
-Elizabeth Billings
-PranavSatwik Vella
-Romal Patel
-Simi Maithani
+## Team Members:
+Elizabeth Billings - Edit_Flashcard
+PranavSatwik Vella - Statistics
+Romal Patel - Flashcard_Back
+Simi Maithani - MainActivity and Flashcard_Front
 
+## Introduction
+FlashQuiz is a flashcard app to help students study. Users can create a deck of flashcards and then quiz themselves and view statistics on how well they've done.
 
-Individual Member Contribution in the App:
+## Supported Devices
+The app should work for all android devices with the android versions above android 5.0 (lollipop).
 
-Elizabeth - Working on Edit_Flashcard
-Romal - Working on Flashcard_Back
-Pranav - Working on Statistics
-Simi - Working on the MainActivity and Flashcard_Front
-
-
-## MILESTONE 3:
-AppName: FlashQuiz
-Logo: Icon changed
-
--AppInfo: This app will help the user learn or memorize information, similar to how they might use physical flashcards. It will help students score better on exams while also allowing them to cut back on paper used.
-
--Supported Devices: The app should work for all android devices with the android versions above android 5.0(lollipop).
--APK: 
+## APK 
 ![apk image](Capture.PNG)
--Test Credentials: We do not have any test credentials for our app. 
--Added functionalities as well.
 
+## Installation
+Download the app as a zip, then unzip it and load it using AndroidStudio. Run the app from there. 
+
+## Other
+There are no credentials needed to use the app, and the app didn't require any outside sources. 

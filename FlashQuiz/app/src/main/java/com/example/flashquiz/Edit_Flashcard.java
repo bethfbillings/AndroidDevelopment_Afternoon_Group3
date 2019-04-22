@@ -11,9 +11,11 @@ import java.util.Stack;
 
 public class Edit_Flashcard extends AppCompatActivity {
 
-    Stack<Flashcard> flashcards = new Stack<>();
     EditText frontET;
     EditText backET;
+    FlashcardsStack fqs;
+    Stack<Flashcard> flashcards;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,8 @@ public class Edit_Flashcard extends AppCompatActivity {
 
         frontET = (EditText) findViewById(R.id.editFrontET);
         backET = (EditText) findViewById(R.id.editBackET);
+        fqs = (FlashcardsStack)getApplication();
+        flashcards = fqs.getFlashcards();
     }
 
 
@@ -31,7 +35,7 @@ public class Edit_Flashcard extends AppCompatActivity {
     }
 
     public void newCard(View v) {
-        Flashcard card = new Flashcard(frontET.getText().toString(), backET.getText().toString());
+        Flashcard card = new Flashcard(frontET.getText().toString(), backET.getText().toString(), 0, 0);
         flashcards.add(card);
         Toast.makeText(getApplicationContext(),"Flashcard Created",Toast.LENGTH_SHORT).show();
     }
