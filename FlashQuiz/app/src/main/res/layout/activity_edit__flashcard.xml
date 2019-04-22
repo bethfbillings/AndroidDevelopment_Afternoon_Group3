@@ -48,6 +48,14 @@
         android:text="Add image to back." />
 
     <Button
+        android:id="@+id/newCardBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:onClick="newCard"
+        android:text="Save" />
+
+    <Button
         android:id="@+id/homeBTN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
