@@ -17,4 +17,8 @@ public class Statistics extends AppCompatActivity {
         Intent Rethome = new Intent(Statistics.this,MainActivity.class);
         Statistics.this.startActivity(Rethome);
     }
+    public void correct(View v){
+        Intent correctans = new Intent(Statistics.this,Flashcard_Back.class);
+
+    }
 }
