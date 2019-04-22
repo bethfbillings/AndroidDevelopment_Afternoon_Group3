@@ -6,11 +6,11 @@ public class Flashcard {
     private int timesSeen;    //Number of times front of flashcard has been shown
     private int timesCorrect; //Number of times user has correctly answered flashcard
 
-    public Flashcard(String front, String back) {
+    public Flashcard(String front, String back, int timesSeen, int timesCorrect) {
         this.front = front;
         this.back = back;
-        this.timesSeen = 0;
-        this.timesCorrect = 0;
+        this.timesSeen = timesSeen;
+        this.timesCorrect = timesCorrect;
     }
 
     public String getFront() {
@@ -43,6 +43,14 @@ public class Flashcard {
 
     public void increaseTimesCorrect() {
         this.timesCorrect++;
+    }
+
+    public void setTimesCorrect(int timesCorrect) {
+        this.timesCorrect = timesCorrect;
+    }
+
+    public void setTimesSeen(int timesSeen) {
+        this.timesSeen = timesSeen;
     }
 
     public String getPercentCorrect() {

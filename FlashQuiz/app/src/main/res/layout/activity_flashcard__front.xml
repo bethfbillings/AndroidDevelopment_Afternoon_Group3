@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
     tools:context=".Flashcard_Front">
 
@@ -21,19 +22,31 @@
 
     <Button
         android:id="@+id/checkAnswerBTN"
-        android:layout_width="match_parent"
+        android:layout_width="192dp"
         android:layout_height="101dp"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:autoSizeTextType="uniform"
+        android:background="@drawable/checkbutton"
         android:text="Check"
-        android:textSize="35dp" />
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        app:srcCompat="@drawable/paperpencil" />
 
     <Button
         android:id="@+id/homeBTN"
-        android:layout_width="160dp"
-        android:layout_height="68dp"
-        android:layout_gravity="right"
+        android:layout_width="211dp"
+        android:layout_height="87dp"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:autoSizeTextType="uniform"
+        android:background="@drawable/checkbutton"
         android:text="Home"
-        android:textSize="10sp" />
+        android:textSize="35sp"
+        android:typeface="monospace" />
 
 </LinearLayout>
