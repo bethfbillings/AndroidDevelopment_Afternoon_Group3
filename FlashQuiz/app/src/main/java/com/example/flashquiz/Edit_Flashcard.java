@@ -15,7 +15,7 @@ public class Edit_Flashcard extends AppCompatActivity {
 
     EditText frontET;
     EditText backET;
-    FlashcardsStack fqs;
+    FQS fqs;
     Stack<Flashcard> flashcards;
     String[] fronts;
     Spinner s;
@@ -27,10 +27,9 @@ public class Edit_Flashcard extends AppCompatActivity {
 
         frontET = (EditText) findViewById(R.id.editFrontET);
         backET = (EditText) findViewById(R.id.editBackET);
-        fqs = (FlashcardsStack)getApplication();
-        flashcards = fqs.getFlashcards();
+        flashcards = fqs.getStack();
 
-        fronts = fqs.frontStringArr();
+        fronts = fqs.frontsToString();
 
         s = (Spinner) findViewById(R.id.editFlashCardSPINNER);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
