@@ -7,18 +7,23 @@ public class FQS {
 
     //Constructor
     //Creates empty Stack of Flashcards
-    public FQS(Stack<Flashcard> stack) {
-        this.stack = stack;
+    public FQS() {
+        this.stack = new Stack<>();
     }
 
     //Returns stack of flashcards
     public Stack<Flashcard> getStack() {
-        return stack;
+            return stack;
     }
 
     //Sets input to stack of flashcards
     public void setStack(Stack<Flashcard> stack) {
         this.stack = stack;
+    }
+
+    //Push to stack
+    public void push(Flashcard card) {
+        this.stack.add(card);
     }
 
     //Pops top flashcard and sends it to back
@@ -54,9 +59,10 @@ public class FQS {
         String[] fronts;
         if(cardsNum > 0) {
             fronts = new String[cardsNum];
-            Stack<Flashcard> flashcardCP = this.stack;
+            Flashcard[] flashcardCP = new Flashcard[cardsNum];
+            stack.copyInto(flashcardCP);
             for (int i = 0; i < cardsNum; i++) {
-                fronts[i] = flashcardCP.pop().getFront();
+                fronts[i] = flashcardCP[i].getFront();
             }
         } else {
             fronts = new String[1];

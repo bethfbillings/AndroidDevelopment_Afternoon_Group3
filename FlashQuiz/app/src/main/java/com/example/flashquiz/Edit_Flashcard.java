@@ -16,8 +16,6 @@ public class Edit_Flashcard extends AppCompatActivity {
     EditText frontET;
     EditText backET;
     FQS fqs;
-    Stack<Flashcard> flashcards;
-    String[] fronts;
     Spinner s;
 
     @Override
@@ -27,10 +25,17 @@ public class Edit_Flashcard extends AppCompatActivity {
 
         frontET = (EditText) findViewById(R.id.editFrontET);
         backET = (EditText) findViewById(R.id.editBackET);
-        flashcards = fqs.getStack();
+        /*try {
+            flashcards = fqs.getStack();
+        } catch (NullPointerException e) {
+            fqs = new FQS();
+        }*/
+        fqs = new FQS();
+        updateSpinner();
+    }
 
-        fronts = fqs.frontsToString();
-
+    public void updateSpinner() {
+        String[] fronts = fqs.frontsToString();
         s = (Spinner) findViewById(R.id.editFlashCardSPINNER);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, fronts);
@@ -39,19 +44,17 @@ public class Edit_Flashcard extends AppCompatActivity {
     }
 
 
-        public void goHome(View v) {
+    public void goHome(View v) {
         Intent goHome = new Intent(Edit_Flashcard.this, MainActivity.class);
         startActivity(goHome);
     }
 
     public void newCard(View v) {
         Flashcard card = new Flashcard(frontET.getText().toString(), backET.getText().toString(), 0, 0);
-        flashcards.add(card);
+        fqs.push(card);
+        updateSpinner();
         Toast.makeText(getApplicationContext(),"Flashcard Created",Toast.LENGTH_SHORT).show();
-    }
-
-    public void saveFlashcards(View v) {
-        
+        frontET.setText(fqs.frontsToString()[0]);
     }
 
 }
