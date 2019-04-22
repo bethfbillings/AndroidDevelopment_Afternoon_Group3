@@ -13,4 +13,14 @@ public class FlashcardsStack extends Application {
     public void setFlashcards(Stack<Flashcard> cards) {
         this.flashcards = cards;
     }
+
+    //Move to next flashcard
+    public void pop() {
+        flashcards.pop();
+    }
+
+    //Return flashcard at top of stack
+    public Flashcard getTop() {
+        flashcards.peek();
+    }
 }
