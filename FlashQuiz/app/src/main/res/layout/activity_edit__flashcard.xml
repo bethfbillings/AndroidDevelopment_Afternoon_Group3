@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorAccent"
     tools:context=".Edit_Flashcard" >
 
     <Spinner
         android:id="@+id/editFlashCardSPINNER"
         android:layout_width="match_parent"
         android:layout_height="54dp"
+        android:textColor="@android:color/holo_blue_light"
         android:autoSizeTextType="uniform"/>
 
     <EditText
@@ -20,15 +22,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Edit Front"
+        android:textSize="50dp"
         android:layout_weight="1"
         android:autoSizeTextType="uniform"/>
-
-    <Button
-        android:id="@+id/frontImageBTN"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autoSizeTextType="uniform"
-        android:text="Add image to front." />
 
     <EditText
         android:id="@+id/editBackET"
@@ -37,21 +33,16 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Edit Back"
+        android:textSize="50dp"
         android:layout_weight="1"
         android:autoSizeTextType="uniform"/>
-
-    <Button
-        android:id="@+id/backImageBTN"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autoSizeTextType="uniform"
-        android:text="Add image to back." />
 
     <Button
         android:id="@+id/newCardBTN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoSizeTextType="uniform"
+        android:background="@drawable/checkbutton"
         android:onClick="newCard"
         android:text="Save" />
 
@@ -60,6 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoSizeTextType="uniform"
+        android:background="@drawable/checkbutton"
         android:onClick="goHome"
         android:text="Home" />
 
