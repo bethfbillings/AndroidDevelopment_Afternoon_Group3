@@ -1,14 +1,49 @@
 package com.example.flashquiz;
 
+import android.util.Log;
+
+import java.util.Arrays;
+import java.util.List;
 import java.util.Stack;
 
 public class FQS {
     private Stack<Flashcard> stack;
 
-    //Constructor
+    //Constructor no input
     //Creates empty Stack of Flashcards
     public FQS() {
         this.stack = new Stack<>();
+    }
+
+    //Constructor for array of cards input
+    public FQS(Flashcard[] cards) {
+        List<Flashcard> list = Arrays.asList(cards);
+        this.stack.addAll(list);
+    }
+
+    //Constructor for string input
+    public FQS(String s) {
+        this.stack = new Stack<>();
+        if(!s.isEmpty()) {
+            String[] semicolons = s.split(";");
+            Flashcard[] cards = new Flashcard[semicolons.length];
+            for (int i = 0; i < semicolons.length; i++) {
+                cards[i] = new Flashcard("", "", 0,0);
+                String[] temp = semicolons[i].split(",");
+                cards[i].setFront(temp[0]);
+                cards[i].setBack(temp[1]);
+                try {
+                    cards[i].setTimesSeen(Integer.valueOf(temp[2]));
+                    cards[i].setTimesCorrect(Integer.valueOf(temp[3]));
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                    cards[i].setTimesSeen(0);
+                    cards[i].setTimesCorrect(0);
+                }
+            }
+            List<Flashcard> list = Arrays.asList(cards);
+            this.stack.addAll(list);
+        }
     }
 
     //Returns stack of flashcards
@@ -69,5 +104,27 @@ public class FQS {
             fronts[0] = "";
         }
         return fronts;
+    }
+
+    //converts stack to string
+    // front,back,getTimesSeen,getTimesCorrect;
+    public String toString() {
+        int cardsNum = this.stack.size();
+        StringBuilder bldr = new StringBuilder();
+        if(cardsNum > 0) {
+            Flashcard[] flashcardCP = new Flashcard[cardsNum];
+            stack.copyInto(flashcardCP);
+            for (int i = 0; i < cardsNum; i++) {
+                bldr.append(flashcardCP[i].getFront());
+                bldr.append(",");
+                bldr.append(flashcardCP[i].getBack());
+                bldr.append(",");
+                bldr.append(flashcardCP[i].getTimesSeen());
+                bldr.append(",");
+                bldr.append(flashcardCP[i].getTimesCorrect());
+                bldr.append(";");
+            }
+        }
+        return bldr.toString();
     }
 }

@@ -1,6 +1,7 @@
 package com.example.flashquiz;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,20 +18,21 @@ public class Edit_Flashcard extends AppCompatActivity {
     EditText backET;
     FQS fqs;
     Spinner s;
+    SharedPreferences preferences;
+    String value;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit__flashcard);
-
+        preferences = getSharedPreferences("STACK", MODE_PRIVATE);
+        String value = preferences.getString("key", "");
+        if(value.equals("")) {
+            value = "Alpha,A,0,0;";
+        }
+        fqs = new FQS(value);
         frontET = (EditText) findViewById(R.id.editFrontET);
         backET = (EditText) findViewById(R.id.editBackET);
-        /*try {
-            flashcards = fqs.getStack();
-        } catch (NullPointerException e) {
-            fqs = new FQS();
-        }*/
-        fqs = new FQS();
         updateSpinner();
     }
 
@@ -54,7 +56,9 @@ public class Edit_Flashcard extends AppCompatActivity {
         fqs.push(card);
         updateSpinner();
         Toast.makeText(getApplicationContext(),"Flashcard Created",Toast.LENGTH_SHORT).show();
-        frontET.setText(fqs.frontsToString()[0]);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("key", fqs.toString());
+        editor.commit();
     }
 
 }

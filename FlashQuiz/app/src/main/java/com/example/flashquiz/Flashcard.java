@@ -1,10 +1,13 @@
 package com.example.flashquiz;
 
-public class Flashcard {
+import java.io.Serializable;
+
+public class Flashcard implements Serializable {
     private String front;     //Front of Flashcard
     private String back;      //Back of Flashcard
     private int timesSeen;    //Number of times front of flashcard has been shown
     private int timesCorrect; //Number of times user has correctly answered flashcard
+    private static final long serialVersionUID = 1L;
 
     public Flashcard(String front, String back, int timesSeen, int timesCorrect) {
         this.front = front;
