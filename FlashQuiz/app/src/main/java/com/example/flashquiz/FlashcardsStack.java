@@ -13,6 +13,8 @@ public class FlashcardsStack extends Application {
     public void setFlashcards(Stack<Flashcard> cards) {
         this.flashcards = cards;
     }
+<<<<<<< HEAD
+=======
 
     //Move to next flashcard
     public void pop() {
@@ -23,4 +25,5 @@ public class FlashcardsStack extends Application {
     public Flashcard getTop() {
         return flashcards.peek();
     }
+>>>>>>> f47eff746d8dcfd04a357ab0ea90f24365b3cbdd
 }
