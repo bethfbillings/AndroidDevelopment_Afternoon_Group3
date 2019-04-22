@@ -15,33 +15,12 @@ private Button Start;
     private Button Stats;
     private Button editflashcards;
     FlashcardsStack fqs;
-    FlashQuizWrapper fqDB;
     Stack<Flashcard> stack;
     Cursor cursor;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        fqDB = new FlashQuizWrapper(this);
-        fqDB.open();
-        fqDB.insert(new Flashcard("A", "Alpha", 0, 0));
-        cursor = fqDB.getAll();
-        stack = new Stack<>();
-
-        if (cursor.moveToFirst()) {
-            while (!cursor.isAfterLast()) {
-                String front = cursor.getString(cursor.getColumnIndex("front"));
-                String back = cursor.getString(cursor.getColumnIndex("back"));
-                Integer timesSeen = cursor.getInt(cursor.getColumnIndex("timesSeen"));
-                Integer timesCorrect = cursor.getInt(cursor.getColumnIndex("timesCorrect"));
-
-                stack.add(new Flashcard(front, back, timesSeen, timesCorrect));
-                cursor.moveToNext();
-            }
-        }
-
-        fqs.setFlashcards(stack);
 
         Start = (Button) findViewById(R.id.startBTN);
         Start.setOnClickListener(new View.OnClickListener() {

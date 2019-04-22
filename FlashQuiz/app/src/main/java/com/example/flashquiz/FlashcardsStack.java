@@ -21,6 +21,6 @@ public class FlashcardsStack extends Application {
 
     //Return flashcard at top of stack
     public Flashcard getTop() {
-        flashcards.peek();
+        return flashcards.peek();
     }
 }
