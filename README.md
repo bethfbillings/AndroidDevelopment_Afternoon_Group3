@@ -21,3 +21,4 @@ Download the app as a zip, then unzip it and load it using AndroidStudio. Run th
 
 ## Other
 There are no credentials needed to use the app, and the app didn't require any outside sources. 
+Globals: https://androidresearch.wordpress.com/2012/03/22/defining-global-variables-in-android/
