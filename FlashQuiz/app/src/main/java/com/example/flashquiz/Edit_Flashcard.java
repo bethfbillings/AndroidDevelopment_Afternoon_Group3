@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.Stack;
@@ -15,6 +17,8 @@ public class Edit_Flashcard extends AppCompatActivity {
     EditText backET;
     FlashcardsStack fqs;
     Stack<Flashcard> flashcards;
+    String[] fronts;
+    Spinner s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,14 @@ public class Edit_Flashcard extends AppCompatActivity {
         backET = (EditText) findViewById(R.id.editBackET);
         fqs = (FlashcardsStack)getApplication();
         flashcards = fqs.getFlashcards();
+
+        fronts = fqs.frontStringArr();
+
+        s = (Spinner) findViewById(R.id.editFlashCardSPINNER);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, fronts);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        s.setAdapter(adapter);
     }
 
 

@@ -1,6 +1,7 @@
 package com.example.flashquiz;
 import android.app.Application;
 
+import java.util.Iterator;
 import java.util.Stack;
 
 public class FlashcardsStack extends Application {
@@ -22,5 +23,22 @@ public class FlashcardsStack extends Application {
     //Return flashcard at top of stack
     public Flashcard getTop() {
         return flashcards.peek();
+    }
+
+    //For edit spinner
+    public String[] frontStringArr() {
+        Integer cardsNum = flashcards.size();
+        String[] fronts;
+        if(cardsNum > 0) {
+            fronts = new String[cardsNum];
+            Stack<Flashcard> flashcardCP = this.flashcards;
+            for (int i = 0; i < cardsNum; i++) {
+                fronts[i] = flashcardCP.pop().getFront();
+            }
+        } else {
+            fronts = new String[1];
+            fronts[0] = "";
+        }
+        return fronts;
     }
 }

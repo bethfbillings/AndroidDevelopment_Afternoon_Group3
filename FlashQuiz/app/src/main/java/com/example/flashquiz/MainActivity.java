@@ -5,7 +5,9 @@ import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 import java.util.ArrayList;
 import java.util.Stack;
@@ -16,6 +18,7 @@ private Button Start;
     private Button editflashcards;
     Stack<Flashcard> stack;
     Cursor cursor;
+    Spinner s;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
