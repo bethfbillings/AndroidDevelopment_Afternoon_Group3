@@ -24,10 +24,18 @@
         android:textSize="87dp"
         android:textStyle="bold|italic" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        app:srcCompat="@drawable/students" />
+
     <Button
         android:id="@+id/startBTN"
-        android:layout_width="match_parent"
+        android:layout_width="302dp"
         android:layout_height="99dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/buttonactivity"
         android:autoSizeTextType="uniform"
         android:text="Start"
         android:textColor="@color/colorPrimaryDark"
@@ -36,9 +44,11 @@
 
     <Button
         android:id="@+id/statisticsBTN"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="297dp"
+        android:layout_height="108dp"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:autoSizeTextType="uniform"
+        android:background="@drawable/buttonactivity"
         android:text="Statistics"
         android:textColor="@color/colorPrimaryDark"
         android:textColorLink="@color/colorPrimaryDark"
@@ -46,17 +56,13 @@
 
     <Button
         android:id="@+id/editFlashcardsBTN"
-        android:layout_width="match_parent"
+        android:layout_width="325dp"
         android:layout_height="99dp"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:autoSizeTextType="uniform"
+        android:background="@drawable/buttonactivity"
         android:text="Edit Flashcards"
         android:textColor="@color/colorPrimaryDark"
         android:textColorLink="@color/colorPrimaryDark"
         android:textSize="30dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="161dp"
-        app:srcCompat="@drawable/students" />
 </LinearLayout>
