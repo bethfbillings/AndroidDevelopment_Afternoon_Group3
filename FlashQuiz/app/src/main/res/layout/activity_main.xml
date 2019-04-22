@@ -24,19 +24,15 @@
         android:textSize="87dp"
         android:textStyle="bold|italic" />
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="161dp"
-        app:srcCompat="@drawable/students" />
+        app:srcCompat="@drawable/students" />-->
 
     <Button
         android:id="@+id/startBTN"
-<<<<<<< HEAD
-        android:layout_width="match_parent"
-=======
         android:layout_width="302dp"
->>>>>>> c8e16e43cfaddd36070cbf07a5648bdce2187c20
         android:layout_height="99dp"
         android:layout_gravity="center_vertical|center_horizontal"
         android:background="@drawable/buttonactivity"

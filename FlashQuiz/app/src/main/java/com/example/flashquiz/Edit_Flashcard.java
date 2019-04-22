@@ -15,11 +15,6 @@ public class Edit_Flashcard extends AppCompatActivity {
     EditText backET;
     FlashcardsStack fqs;
     Stack<Flashcard> flashcards;
-<<<<<<< HEAD
-    FlashQuizWrapper fqDB;
-=======
-
->>>>>>> f47eff746d8dcfd04a357ab0ea90f24365b3cbdd
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +25,6 @@ public class Edit_Flashcard extends AppCompatActivity {
         backET = (EditText) findViewById(R.id.editBackET);
         fqs = (FlashcardsStack)getApplication();
         flashcards = fqs.getFlashcards();
-<<<<<<< HEAD
-        fqDB = new FlashQuizWrapper(this);
-=======
->>>>>>> f47eff746d8dcfd04a357ab0ea90f24365b3cbdd
     }
 
 
@@ -45,7 +36,6 @@ public class Edit_Flashcard extends AppCompatActivity {
     public void newCard(View v) {
         Flashcard card = new Flashcard(frontET.getText().toString(), backET.getText().toString(), 0, 0);
         flashcards.add(card);
-        fqDB.insert(card);
         Toast.makeText(getApplicationContext(),"Flashcard Created",Toast.LENGTH_SHORT).show();
     }
 
