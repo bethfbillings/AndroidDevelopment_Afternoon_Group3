@@ -11,11 +11,17 @@ import java.util.Stack;
 
 public class Edit_Flashcard extends AppCompatActivity {
 
+<<<<<<< HEAD
     EditText frontET;
     EditText backET;
     FlashcardsStack fqs;
     Stack<Flashcard> flashcards;
     FlashQuizWrapper fqDB;
+=======
+    Stack<Flashcard> flashcards = new Stack<>();
+    EditText frontET;
+    EditText backET;
+>>>>>>> c8e16e43cfaddd36070cbf07a5648bdce2187c20
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +30,12 @@ public class Edit_Flashcard extends AppCompatActivity {
 
         frontET = (EditText) findViewById(R.id.editFrontET);
         backET = (EditText) findViewById(R.id.editBackET);
+<<<<<<< HEAD
         fqs = (FlashcardsStack)getApplication();
         flashcards = fqs.getFlashcards();
         fqDB = new FlashQuizWrapper(this);
+=======
+>>>>>>> c8e16e43cfaddd36070cbf07a5648bdce2187c20
     }
 
 
@@ -36,6 +45,7 @@ public class Edit_Flashcard extends AppCompatActivity {
     }
 
     public void newCard(View v) {
+<<<<<<< HEAD
         Flashcard card = new Flashcard(frontET.getText().toString(), backET.getText().toString(), 0, 0);
         flashcards.add(card);
         fqDB.insert(card);
@@ -46,4 +56,11 @@ public class Edit_Flashcard extends AppCompatActivity {
         
     }
 
+=======
+        Flashcard card = new Flashcard(frontET.getText().toString(), backET.getText().toString());
+        flashcards.add(card);
+        Toast.makeText(getApplicationContext(),"Flashcard Created",Toast.LENGTH_SHORT).show();
+    }
+
+>>>>>>> c8e16e43cfaddd36070cbf07a5648bdce2187c20
 }
