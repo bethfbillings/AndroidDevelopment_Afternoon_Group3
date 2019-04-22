@@ -15,8 +15,9 @@
         android:autoSizeTextType="uniform"
         android:background="#FFFFFF"
         android:fontFamily="sans-serif-black"
+        android:layout_margin="20dp"
         android:text="Statistics"
-        android:textSize="12sp"
+        android:textSize="70sp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -26,20 +27,24 @@
 
         <TextView
             android:id="@+id/correctTV"
-            android:layout_width="wrap_content"
+            android:layout_width="20dp"
             android:layout_height="match_parent"
+            android:layout_margin="20dp"
             android:layout_weight="1"
             android:autoSizeTextType="uniform"
             android:background="#47E142"
+            android:gravity="center"
             android:text="Correct"
-            android:textSize="8sp"
+            android:textSize="38sp"
             android:textStyle="italic" />
 
         <TextView
             android:id="@+id/correctPercentTV"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_margin="20dp"
             android:layout_weight="1"
+            android:textSize="28dp"
             android:autoSizeTextType="uniform"
             android:background="#FFFFFF"
             android:text="-%" />
@@ -53,10 +58,13 @@
 
         <TextView
             android:id="@+id/incorrectTV"
-            android:layout_width="wrap_content"
+            android:layout_width="23dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="38dp"
             android:background="#F43F35"
             android:text="Incorrect"
             android:textStyle="italic" />
@@ -65,6 +73,8 @@
             android:id="@+id/inoorrectPercentTV"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:textSize="28dp"
             android:layout_weight="1"
             android:autoSizeTextType="uniform"
             android:background="#FFFFFF"
@@ -79,19 +89,23 @@
 
         <TextView
             android:id="@+id/totalTV"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="20dp"
+            android:layout_height="58dp"
+            android:layout_margin="20dp"
+            android:textSize="38dp"
             android:layout_weight="1"
             android:autoSizeTextType="uniform"
             android:background="#ECA75D"
+            android:gravity="center"
             android:text="Total"
-            android:textSize="10sp"
             android:textStyle="italic" />
 
         <TextView
             android:id="@+id/totalCountTV"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="47dp"
+            android:textSize="28dp"
+            android:layout_margin="20dp"
             android:layout_weight="1"
             android:autoSizeTextType="uniform"
             android:background="#FFFFFF"
@@ -102,7 +116,10 @@
         android:id="@+id/homeBTN"
         android:layout_width="130dp"
         android:layout_height="69dp"
+        android:textSize="28dp"
         android:autoSizeTextType="uniform"
+        android:layout_margin="20dp"
+        android:gravity="center"
         android:onClick="home"
         android:text="Home" />
 
