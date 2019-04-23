@@ -34,6 +34,7 @@ public class Edit_Flashcard extends AppCompatActivity {
         frontET = (EditText) findViewById(R.id.editFrontET);
         backET = (EditText) findViewById(R.id.editBackET);
         updateSpinner();
+        value = s.getSelectedItem().toString();
     }
 
     public void updateSpinner() {
@@ -59,6 +60,20 @@ public class Edit_Flashcard extends AppCompatActivity {
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString("key", fqs.toString());
         editor.commit();
+    }
+
+    public void updateText(View v) {
+        value = s.getSelectedItem().toString();
+        Integer cardNum = fqs.getIndex(value);
+        Flashcard card = fqs.getCard(cardNum);
+        frontET.setText(card.getFront());
+        backET.setText(card.getBack());
+    }
+
+    public void deleteCard(View v) {
+        Integer delete = fqs.getIndex(value);
+        fqs.deleteCard(delete);
+        Toast.makeText(getApplicationContext(), "Card deleted", Toast.LENGTH_SHORT).show();
     }
 
 }

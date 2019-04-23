@@ -12,8 +12,8 @@
         android:id="@+id/editFlashCardSPINNER"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:textColor="@android:color/holo_blue_light"
-        android:autoSizeTextType="uniform"/>
+        android:autoSizeTextType="uniform"
+        android:textColor="@android:color/holo_blue_light" />
 
     <EditText
         android:id="@+id/editFrontET"
@@ -45,6 +45,15 @@
         android:background="@drawable/checkbutton"
         android:onClick="newCard"
         android:text="Save" />
+
+    <Button
+        android:id="@+id/deleteCardBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/checkbutton"
+        android:onClick="deleteCard"
+        android:text="Delete" />
 
     <Button
         android:id="@+id/homeBTN"

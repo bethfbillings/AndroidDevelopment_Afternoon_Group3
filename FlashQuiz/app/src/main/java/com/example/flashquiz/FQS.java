@@ -127,4 +127,23 @@ public class FQS {
         }
         return bldr.toString();
     }
+
+    //Returns index of selected front text, for edit_flashcards
+    public Integer getIndex(String text) {
+        Integer cardsNum = this.stack.size();
+        for (int i = 0; i < cardsNum; i++) {
+            if (this.stack.get(i).getFront().equals(text)) {
+                return i;
+            }
+        }
+        return null;
+    }
+
+    public Flashcard getCard(Integer idx) {
+        return this.stack.get(idx);
+    }
+
+    public void deleteCard(Integer idx) {
+        this.stack.remove(idx);
+    }
 }
