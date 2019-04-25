@@ -2,10 +2,10 @@
 ![FlashQuiz icon](flashquiz_icon.png)
 
 ## Team Members:
-Elizabeth Billings - Edit_Flashcard
-PranavSatwik Vella - Statistics
-Romal Patel - Flashcard_Back
-Simi Maithani - MainActivity and Flashcard_Front
+Elizabeth Billings - Edit_Flashcard  
+PranavSatwik Vella - Statistics  
+Romal Patel - Flashcard_Back  
+Simi Maithani - MainActivity and Flashcard_Front  
 
 ## Introduction
 FlashQuiz is a flashcard app to help students study. Users can create a deck of flashcards and then quiz themselves and view statistics on how well they've done.
@@ -21,4 +21,3 @@ Download the app as a zip, then unzip it and load it using AndroidStudio. Run th
 
 ## Other
 There are no credentials needed to use the app, and the app didn't require any outside sources. 
-Globals: https://androidresearch.wordpress.com/2012/03/22/defining-global-variables-in-android/
