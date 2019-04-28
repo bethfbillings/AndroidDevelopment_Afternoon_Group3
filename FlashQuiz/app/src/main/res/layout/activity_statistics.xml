@@ -44,7 +44,7 @@
             android:layout_weight="1"
             android:textSize="40sp"
             android:background="#FFFFFF"
-            android:text="@string/Number" />
+            android:text="%" />
 
     </LinearLayout>
 
@@ -73,7 +73,7 @@
             android:textSize="40sp"
             android:layout_weight="1"
             android:background="#FFFFFF"
-            android:text="@string/string" />
+            android:text="%" />
 
     </LinearLayout>
 
@@ -102,7 +102,7 @@
             android:layout_margin="20dp"
             android:layout_weight="1"
             android:background="#FFFFFF"
-            android:text="@string/NUmber" />
+            android:text="#" />
     </LinearLayout>
 
     <Button
