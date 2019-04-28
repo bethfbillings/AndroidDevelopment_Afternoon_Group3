@@ -29,7 +29,7 @@
             android:autoSizeTextType="uniform"
             android:background="#49EE33"
             android:onClick="open_front"
-            android:text="Correct"
+            android:text="CORRECT"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
 
@@ -40,7 +40,7 @@
             android:autoSizeTextType="uniform"
             android:background="#F53C3C"
             android:onClick="open_front1"
-            android:text="Incorrect"
+            android:text="INCORRECT"
             android:textAlignment="viewStart"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
     </LinearLayout>
