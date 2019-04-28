@@ -1,11 +1,8 @@
 package com.example.flashquiz;
 
 import android.content.Intent;
-<<<<<<< HEAD
 import android.media.MediaPlayer;
-=======
 import android.content.SharedPreferences;
->>>>>>> 92f36427adf95bbeb07800e9fbbee4bcb1014261
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
