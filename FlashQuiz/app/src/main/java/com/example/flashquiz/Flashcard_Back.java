@@ -1,10 +1,12 @@
 package com.example.flashquiz;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Flashcard_Back extends AppCompatActivity {
 
@@ -12,25 +14,42 @@ public class Flashcard_Back extends AppCompatActivity {
     private Button incorrect;
     private Button statistics;
     private Button home;
+    SharedPreferences preferences;
+    TextView backTV;
+    FQS fqs;
     int sum;
     int insum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flashcard__back);
-
+        preferences = getSharedPreferences("STACK", MODE_PRIVATE);
+        String value = preferences.getString("key", "");
+        fqs = new FQS(value);
+        backTV = (TextView) findViewById(R.id.flashcardBackTV);
+        backTV.setText(fqs.viewBack());
         correct = (Button) findViewById(R.id.correctBTN);
         correct.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
+                fqs.timesCorrectPlus();
+                fqs.timesSeenPlus();
+                fqs.sendToBack();
+                String temp = fqs.toString();
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("key", fqs.toString());
+                editor.commit();
                 open_front();
-                sum++;
             }
         });
         incorrect = (Button) findViewById(R.id.incorrectBTN);
         incorrect.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
+                fqs.timesSeenPlus();
+                fqs.sendToBack();
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("key", fqs.toString());
+                editor.commit();
                 open_front1();
-                insum++;
             }
         });
         statistics = (Button) findViewById(R.id.statisticsBTN);
