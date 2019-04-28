@@ -9,6 +9,7 @@
     tools:context=".Flashcard_Front">
 
     <TextView
+        android:id="@+id/frontTV"
         android:layout_width="match_parent"
         android:layout_height="265dp"
         android:autoSizeTextType="uniform"
