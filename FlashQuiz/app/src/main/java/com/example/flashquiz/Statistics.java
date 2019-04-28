@@ -23,8 +23,6 @@ public class Statistics extends AppCompatActivity {
         Statistics.this.startActivity(Rethome);
         mp.start();
     }
-    public void correct(View v){
-        Intent correctans = new Intent(Statistics.this,Flashcard_Back.class);
 
-    }
+
 }

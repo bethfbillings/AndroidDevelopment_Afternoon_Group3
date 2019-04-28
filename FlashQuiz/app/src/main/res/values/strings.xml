@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FlashQuiz</string>
+    <string name="Number">70%</string>
+    <string name="String">Correct</string>
+    <string name="Statistics">Statistics</string>
+    <string name="Incorrect">Incorrect</string>
+    <string name="string">30%</string>
+    <string name="Total">Total</string>
+    <string name="NUmber">10</string>
+    <string name="Home">Home</string>
 </resources>

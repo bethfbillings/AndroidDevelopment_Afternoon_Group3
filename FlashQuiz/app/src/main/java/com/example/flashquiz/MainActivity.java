@@ -64,6 +64,7 @@ private Button Start;
         Intent stats = new Intent(this, Statistics.class);
         startActivityForResult(stats, 1);
         startActivity(stats);
+
     }
     public void open_editflash() {
         Intent editflash = new Intent(this, Edit_Flashcard.class);
