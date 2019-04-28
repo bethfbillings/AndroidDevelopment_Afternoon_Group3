@@ -146,4 +146,32 @@ public class FQS {
     public void deleteCard(Integer idx) {
         this.stack.remove(idx);
     }
+
+    public int cardsSeen() {
+        Integer cardsNum = this.stack.size();
+        Integer cardsSeen = 0;
+        for (int i = 0; i < cardsNum; i++) {
+                cardsSeen = cardsSeen + this.getCard(i).setTimesSeen();
+            }
+        return cardsSeen;
+    }
+
+    public int cardsCorrect() {
+        Integer cardsNum = this.stack.size();
+        Integer cardsCorrect = 0;
+        for (int i = 0; i < cardsNum; i++) {
+            cardsCorrect = cardsCorrect + this.getCard(i).setTimesSeen();
+        }
+        return cardsCorrect;
+    }
+
+    public float correctPercent() {
+        Integer seen = this.cardsSeen();
+        Integer correct = this.cardsCorrect();
+        float percent = 0;
+        if (correct != 0) {
+            percent = seen / correct;
+        }
+        return  percent;
+    }
 }
