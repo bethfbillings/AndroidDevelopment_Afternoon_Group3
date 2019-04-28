@@ -15,10 +15,10 @@ private Button Start;
     private Button Stats;
     private Button editflashcards;
     FlashcardsStack fqs;
-<<<<<<< HEAD
+
     FlashQuizWrapper fqDB;
-=======
->>>>>>> f47eff746d8dcfd04a357ab0ea90f24365b3cbdd
+
+
     Stack<Flashcard> stack;
     Cursor cursor;
 
