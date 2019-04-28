@@ -151,7 +151,7 @@ public class FQS {
         Integer cardsNum = this.stack.size();
         Integer cardsSeen = 0;
         for (int i = 0; i < cardsNum; i++) {
-                cardsSeen = cardsSeen + this.getCard(i).setTimesSeen();
+                cardsSeen = cardsSeen + this.stack.get(i).getTimesSeen();
             }
         return cardsSeen;
     }
@@ -160,7 +160,7 @@ public class FQS {
         Integer cardsNum = this.stack.size();
         Integer cardsCorrect = 0;
         for (int i = 0; i < cardsNum; i++) {
-            cardsCorrect = cardsCorrect + this.getCard(i).setTimesSeen();
+            cardsCorrect = cardsCorrect + this.stack.get(i).getTimesCorrect();
         }
         return cardsCorrect;
     }
