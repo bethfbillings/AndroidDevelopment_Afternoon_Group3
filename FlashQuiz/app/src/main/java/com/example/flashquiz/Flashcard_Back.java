@@ -12,7 +12,8 @@ public class Flashcard_Back extends AppCompatActivity {
     private Button incorrect;
     private Button statistics;
     private Button home;
-
+    int sum;
+    int insum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,12 +23,14 @@ public class Flashcard_Back extends AppCompatActivity {
         correct.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
                 open_front();
+                sum++;
             }
         });
         incorrect = (Button) findViewById(R.id.incorrectBTN);
         incorrect.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
                 open_front1();
+                insum++;
             }
         });
         statistics = (Button) findViewById(R.id.statisticsBTN);
@@ -43,6 +46,10 @@ public class Flashcard_Back extends AppCompatActivity {
             }
         });
 
+        Intent intent = new Intent(Flashcard_Back.this,Statistics.class);
+        intent.putExtra("sumcorr",sum);
+        intent.putExtra("incorrsum",insum);
+        startActivity(intent);
 
     }
     public void open_front() {
@@ -59,10 +66,12 @@ public class Flashcard_Back extends AppCompatActivity {
         Intent front = new Intent(this, Statistics.class);
         startActivityForResult(front, 1);
         startActivity(front);
+
     }
     public void open_home() {
         Intent front = new Intent(this, MainActivity.class);
         startActivityForResult(front, 1);
         startActivity(front);
     }
+
 }
