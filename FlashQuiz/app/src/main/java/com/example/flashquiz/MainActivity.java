@@ -16,14 +16,6 @@ public class MainActivity extends AppCompatActivity {
 private Button Start;
     private Button Stats;
     private Button editflashcards;
-<<<<<<< HEAD
-    FlashcardsStack fqs;
-
-    FlashQuizWrapper fqDB;
-
-
-=======
->>>>>>> 2226992a4ee6fea378d571f03ac9023856ea72e8
     Stack<Flashcard> stack;
     Cursor cursor;
     Spinner s;
