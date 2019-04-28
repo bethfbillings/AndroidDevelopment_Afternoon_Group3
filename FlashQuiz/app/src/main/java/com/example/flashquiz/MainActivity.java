@@ -2,6 +2,7 @@ package com.example.flashquiz;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,27 +20,36 @@ private Button Start;
     Stack<Flashcard> stack;
     Cursor cursor;
     Spinner s;
+    Button bt;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.button18);
         setContentView(R.layout.activity_main);
 
         Start = (Button) findViewById(R.id.startBTN);
+        final MediaPlayer mp1 = MediaPlayer.create(this, R.raw.button18);
         Start.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
+                mp1.start();
+
                 openfront();
             }
         });
 
         Stats = (Button) findViewById(R.id.statisticsBTN);
+        final MediaPlayer mp2 = MediaPlayer.create(this, R.raw.button18);
         Stats.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
+                mp2.start();
                 open_stats();
             }
         });
         editflashcards = (Button) findViewById(R.id.editFlashcardsBTN);
+        final MediaPlayer mp3 = MediaPlayer.create(this, R.raw.button18);
         editflashcards.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
+                mp3.start();
                 open_editflash();
             }
         });
