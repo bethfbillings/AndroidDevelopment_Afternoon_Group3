@@ -2,10 +2,10 @@
 ![FlashQuiz icon](flashquiz_icon.png)
 
 ## Team Members:
-Elizabeth Billings - Edit_Flashcard
-PranavSatwik Vella - Statistics
-Romal Patel - Flashcard_Back
-Simi Maithani - MainActivity and Flashcard_Front
+Elizabeth Billings - Edit_Flashcard  
+PranavSatwik Vella - Statistics  
+Romal Patel - Flashcard_Back  
+Simi Maithani - MainActivity and Flashcard_Front  
 
 ## Introduction
 FlashQuiz is a flashcard app to help students study. Users can create a deck of flashcards and then quiz themselves and view statistics on how well they've done.
