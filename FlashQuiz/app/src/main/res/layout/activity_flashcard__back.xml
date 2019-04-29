@@ -61,7 +61,8 @@
             android:autoSizeTextType="uniform"
             android:background="#4F232BC5"
             android:onClick="open_stats"
-            android:text="Statistics" />
+            android:text="Statistics"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/homeBTN"
@@ -70,6 +71,7 @@
             android:autoSizeTextType="uniform"
             android:background="#4F232BC5"
             android:onClick="open_home"
-            android:text="Home" />
+            android:text="Home"
+            android:textSize="22sp" />
     </LinearLayout>
 </LinearLayout>
