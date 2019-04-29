@@ -15,7 +15,7 @@
         android:background="#FFFFFF"
         android:fontFamily="sans-serif-black"
         android:layout_margin="20dp"
-        android:text="@string/Statistics"
+        android:text="Statistics"
         android:textSize="70sp"
         android:textStyle="bold" />
 
@@ -32,7 +32,7 @@
             android:layout_weight="1"
             android:background="#47E142"
             android:gravity="center"
-            android:text="@string/String"
+            android:text="String"
             android:textSize="45sp"
             android:textStyle="italic" />
 
@@ -42,15 +42,10 @@
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-<<<<<<< HEAD
             android:autoSizeTextType="uniform"
             android:background="#FFFFFF"
             android:textSize="28dp" />
-=======
-            android:textSize="40sp"
-            android:background="#FFFFFF"
-            android:text="%" />
->>>>>>> c33062c6f9f7df69b1ccebc85d9eb4a93a30e508
+
 
     </LinearLayout>
 
@@ -68,7 +63,7 @@
             android:layout_margin="20sp"
             android:textSize="50sp"
             android:background="#F43F35"
-            android:text="@string/Incorrect"
+            android:text="Incorrect"
             android:textStyle="italic" />
 
         <TextView
@@ -97,7 +92,7 @@
             android:layout_weight="1"
             android:background="#ECA75D"
             android:gravity="center"
-            android:text="@string/Total"
+            android:text="Total"
             android:textStyle="italic" />
 
         <TextView
@@ -119,6 +114,6 @@
         android:layout_margin="20dp"
         android:gravity="center"
         android:onClick="home"
-        android:text="@string/Home" />
+        android:text="Home" />
 
 </LinearLayout>

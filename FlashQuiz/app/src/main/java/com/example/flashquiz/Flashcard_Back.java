@@ -15,25 +15,15 @@ public class Flashcard_Back extends AppCompatActivity {
     private Button incorrect;
     private Button statistics;
     private Button home;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
     Button bt;
 
 
     int sum;
     int insum;
-=======
     SharedPreferences preferences;
     TextView backTV;
     FQS fqs;
-    Button bt;
-    int sum;
-    int insum;
 
->>>>>>> 52b816772e59287d48878f146b25a5bb2d22a0e0
->>>>>>> c33062c6f9f7df69b1ccebc85d9eb4a93a30e508
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,14 +45,8 @@ public class Flashcard_Back extends AppCompatActivity {
                 editor.putString("key", fqs.toString());
                 editor.commit();
                 open_front();
-<<<<<<< HEAD
-=======
                 mp.start();
-<<<<<<< HEAD
                 sum++;
-=======
->>>>>>> 52b816772e59287d48878f146b25a5bb2d22a0e0
->>>>>>> c33062c6f9f7df69b1ccebc85d9eb4a93a30e508
             }
         });
         incorrect = (Button) findViewById(R.id.incorrectBTN);
@@ -75,11 +59,8 @@ public class Flashcard_Back extends AppCompatActivity {
                 editor.putString("key", fqs.toString());
                 editor.commit();
                 open_front1();
-<<<<<<< HEAD
-=======
                 mp1.start();
                 insum++;
->>>>>>> c33062c6f9f7df69b1ccebc85d9eb4a93a30e508
             }
         });
         statistics = (Button) findViewById(R.id.statisticsBTN);
