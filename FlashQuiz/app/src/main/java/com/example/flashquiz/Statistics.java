@@ -1,25 +1,14 @@
 package com.example.flashquiz;
 
 import android.content.Intent;
-<<<<<<< HEAD
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
-
-public class Statistics extends AppCompatActivity {
- SharedPreferences prefs;
- FQS fqs;
-  TextView corrtv;
-  TextView incorrtv;
-float correctPercent;
-float inccorrpercent;
-float incorrectcards;
-Integer cardsSeen;
-Integer correctcards;
-=======
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,7 +17,17 @@ import android.widget.Button;
 
 public class Statistics extends AppCompatActivity {
     Button bt;
->>>>>>> c33062c6f9f7df69b1ccebc85d9eb4a93a30e508
+    Integer cardsSeen;
+    Integer correctcards;
+    SharedPreferences prefs;
+    FQS fqs;
+    TextView corrtv;
+    TextView incorrtv;
+    float correctPercent;
+    float inccorrpercent;
+    float incorrectcards;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
