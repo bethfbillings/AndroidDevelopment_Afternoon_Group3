@@ -30,7 +30,7 @@
         android:background="@drawable/checkbutton"
         android:text="Check"
         android:textAlignment="center"
-        android:textSize="25dp"
+        android:textSize="42dp"
         android:typeface="monospace" />
 
     <ImageView
@@ -47,7 +47,7 @@
         android:autoSizeTextType="uniform"
         android:background="@drawable/checkbutton"
         android:text="Home"
-        android:textSize="35sp"
+        android:textSize="42dp"
         android:typeface="monospace" />
 
 </LinearLayout>

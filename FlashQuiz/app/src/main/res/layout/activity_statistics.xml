@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:backgroundTint="@color/colorAccent"
     android:orientation="vertical"
     tools:context=".Statistics">
 
@@ -12,10 +13,11 @@
         android:id="@+id/statisticsTV"
         android:layout_width="match_parent"
         android:layout_height="76dp"
+        android:layout_margin="20dp"
         android:background="#FFFFFF"
         android:fontFamily="sans-serif-black"
-        android:layout_margin="20dp"
-        android:text="@string/Statistics"
+        android:text="Statistics"
+        android:textColor="#02088B"
         android:textSize="70sp"
         android:textStyle="bold" />
 
@@ -27,12 +29,12 @@
         <TextView
             android:id="@+id/correctTV"
             android:layout_width="20dp"
-            android:layout_height="match_parent"
+            android:layout_height="83dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
             android:background="#47E142"
-            android:gravity="center"
-            android:text="@string/String"
+            android:gravity="left"
+            android:text="String"
             android:textSize="45sp"
             android:textStyle="italic" />
 
@@ -56,14 +58,14 @@
 
         <TextView
             android:id="@+id/incorrectTV"
-            android:layout_width="23dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_width="132dp"
+            android:layout_height="106dp"
             android:layout_margin="20sp"
-            android:textSize="50sp"
+            android:layout_weight="1"
             android:background="#F43F35"
-            android:text="@string/Incorrect"
+            android:gravity="left"
+            android:text="Incorrect"
+            android:textSize="50sp"
             android:textStyle="italic" />
 
         <TextView
@@ -71,10 +73,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="20sp"
-            android:textSize="40sp"
             android:layout_weight="1"
             android:background="#FFFFFF"
-            android:text="%" />
+            android:text="%"
+            android:textSize="40sp" />
 
     </LinearLayout>
 
@@ -86,34 +88,34 @@
         <TextView
             android:id="@+id/totalTV"
             android:layout_width="20dp"
-            android:layout_height="58dp"
+            android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:textSize="50sp"
             android:layout_weight="1"
             android:background="#ECA75D"
-            android:gravity="center"
-            android:text="@string/Total"
+            android:gravity="left"
+            android:text="Total"
+            android:textSize="50sp"
             android:textStyle="italic" />
 
         <TextView
             android:id="@+id/totalCountTV"
             android:layout_width="wrap_content"
             android:layout_height="47dp"
-            android:textSize="28sp"
             android:layout_margin="20dp"
             android:layout_weight="1"
             android:background="#FFFFFF"
-            android:text="#" />
+            android:text="#"
+            android:textSize="28sp" />
     </LinearLayout>
 
     <Button
         android:id="@+id/homeBTN"
         android:layout_width="130dp"
         android:layout_height="69dp"
-        android:textSize="28sp"
         android:layout_margin="20dp"
         android:gravity="center"
         android:onClick="home"
-        android:text="@string/Home" />
+        android:text="Home"
+        android:textSize="28sp" />
 
 </LinearLayout>

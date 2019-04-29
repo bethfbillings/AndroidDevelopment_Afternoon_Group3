@@ -103,4 +103,5 @@ public class Flashcard_Back extends AppCompatActivity {
         startActivity(front);
     }
 
+
 }

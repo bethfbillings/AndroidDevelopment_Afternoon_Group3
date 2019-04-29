@@ -28,10 +28,13 @@
             android:layout_height="70dp"
             android:autoSizeTextType="uniform"
             android:background="#49EE33"
+            android:fontFamily="cursive"
             android:onClick="open_front"
             android:text="CORRECT"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textStyle="bold"
+            tools:ignore="OnClick" />
 
         <Button
             android:id="@+id/incorrectBTN"
@@ -39,10 +42,13 @@
             android:layout_height="70dp"
             android:autoSizeTextType="uniform"
             android:background="#F53C3C"
-            android:onClick="open_front1"
+            android:fontFamily="cursive"
+            android:onClick="open_home"
             android:text="INCORRECT"
             android:textAlignment="viewStart"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textStyle="bold"
+            tools:ignore="OnClick" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,7 +63,9 @@
             android:autoSizeTextType="uniform"
             android:background="#4F232BC5"
             android:onClick="open_stats"
-            android:text="Statistics" />
+            android:text="Statistics"
+            android:textSize="20sp"
+            tools:ignore="OnClick" />
 
         <Button
             android:id="@+id/homeBTN"
@@ -66,6 +74,8 @@
             android:autoSizeTextType="uniform"
             android:background="#4F232BC5"
             android:onClick="open_home"
-            android:text="Home" />
+            android:text="Home"
+            android:textSize="22sp"
+            tools:ignore="OnClick" />
     </LinearLayout>
 </LinearLayout>
