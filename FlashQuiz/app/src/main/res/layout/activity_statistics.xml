@@ -45,6 +45,12 @@
             android:autoSizeTextType="uniform"
             android:background="#FFFFFF"
             android:textSize="28dp" />
+<<<<<<< HEAD
+=======
+            android:textSize="40sp"
+            android:background="#FFFFFF"
+            android:text="%" />
+>>>>>>> 4fd1df355e96a94499cc78b4f0d1f6bf50e89b13
 
     </LinearLayout>
 
