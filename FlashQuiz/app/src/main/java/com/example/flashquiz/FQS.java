@@ -84,7 +84,7 @@ public class FQS {
 
     //Adds 1 to top flashcard times correct
     public void timesCorrectPlus() {
-        this.stack.peek().getPercentCorrect();
+        this.stack.peek().increaseTimesCorrect();
     }
 
     //Creates array of strings from front of flashcards
@@ -166,12 +166,12 @@ public class FQS {
     }
 
     public float correctPercent() {
-        Integer seen = this.cardsSeen();
-        Integer correct = this.cardsCorrect();
+        Integer seen = cardsSeen();
+        Integer correct = cardsCorrect();
         float percent = 0;
-        if (correct != 0) {
-            percent = seen / correct;
+        if (seen != 0) {
+            percent = correct / seen;
         }
-        return  percent;
+        return percent;
     }
 }
