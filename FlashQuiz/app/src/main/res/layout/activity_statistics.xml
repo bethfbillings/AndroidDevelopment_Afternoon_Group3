@@ -42,15 +42,9 @@
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-<<<<<<< HEAD
             android:autoSizeTextType="uniform"
             android:background="#FFFFFF"
             android:textSize="28dp" />
-=======
-            android:textSize="40sp"
-            android:background="#FFFFFF"
-            android:text="%" />
->>>>>>> c33062c6f9f7df69b1ccebc85d9eb4a93a30e508
 
     </LinearLayout>
 
