@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:backgroundTint="#00F3EFA4"
+    android:backgroundTint="@color/colorAccent"
     android:orientation="vertical"
     tools:context=".Statistics">
 
