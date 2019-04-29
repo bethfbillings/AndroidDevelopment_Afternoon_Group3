@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:autoSizeTextType="uniform"
+        android:backgroundTint="#F5A58C"
         android:textColor="@android:color/holo_blue_light" />
 
     <EditText
