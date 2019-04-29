@@ -15,6 +15,7 @@
         android:layout_height="76dp"
         android:layout_margin="20dp"
         android:background="#FFFFFF"
+        android:gravity="center"
         android:fontFamily="sans-serif-black"
         android:text="Statistics"
         android:textColor="#02088B"
@@ -28,7 +29,7 @@
 
         <TextView
             android:id="@+id/correctTV"
-            android:layout_width="20dp"
+            android:layout_width="10dp"
             android:layout_height="83dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
@@ -110,8 +111,8 @@
 
     <Button
         android:id="@+id/homeBTN"
-        android:layout_width="130dp"
-        android:layout_height="69dp"
+        android:layout_width="176dp"
+        android:layout_height="114dp"
         android:layout_margin="20dp"
         android:gravity="center"
         android:onClick="home"
