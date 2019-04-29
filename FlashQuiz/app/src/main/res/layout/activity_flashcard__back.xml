@@ -33,7 +33,8 @@
             android:text="CORRECT"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="OnClick" />
 
         <Button
             android:id="@+id/incorrectBTN"
@@ -46,7 +47,8 @@
             android:text="INCORRECT"
             android:textAlignment="viewStart"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="OnClick" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,7 +64,8 @@
             android:background="#4F232BC5"
             android:onClick="open_stats"
             android:text="Statistics"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="OnClick" />
 
         <Button
             android:id="@+id/homeBTN"
@@ -72,6 +75,7 @@
             android:background="#4F232BC5"
             android:onClick="open_home"
             android:text="Home"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            tools:ignore="OnClick" />
     </LinearLayout>
 </LinearLayout>
