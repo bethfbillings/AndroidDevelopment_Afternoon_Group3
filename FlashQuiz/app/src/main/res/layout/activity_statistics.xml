@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:backgroundTint="#00F3EFA4"
     android:orientation="vertical"
     tools:context=".Statistics">
 
@@ -72,10 +73,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="20sp"
-            android:textSize="40sp"
             android:layout_weight="1"
             android:background="#FFFFFF"
-            android:text="%" />
+            android:text="%"
+            android:textSize="40sp" />
 
     </LinearLayout>
 
@@ -100,21 +101,21 @@
             android:id="@+id/totalCountTV"
             android:layout_width="wrap_content"
             android:layout_height="47dp"
-            android:textSize="28sp"
             android:layout_margin="20dp"
             android:layout_weight="1"
             android:background="#FFFFFF"
-            android:text="#" />
+            android:text="#"
+            android:textSize="28sp" />
     </LinearLayout>
 
     <Button
         android:id="@+id/homeBTN"
         android:layout_width="130dp"
         android:layout_height="69dp"
-        android:textSize="28sp"
         android:layout_margin="20dp"
         android:gravity="center"
         android:onClick="home"
-        android:text="Home" />
+        android:text="Home"
+        android:textSize="28sp" />
 
 </LinearLayout>
