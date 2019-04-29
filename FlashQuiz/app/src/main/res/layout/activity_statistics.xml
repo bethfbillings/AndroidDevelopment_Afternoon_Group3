@@ -116,6 +116,7 @@
         android:layout_margin="20dp"
         android:gravity="center"
         android:onClick="home"
+        android:background="@drawable/button_border"
         android:text="Home"
         android:textSize="28sp" />
 

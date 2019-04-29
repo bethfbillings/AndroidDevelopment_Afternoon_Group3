@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="#D4FDA5"
     android:orientation="vertical"
     tools:context=".Flashcard_Front">
 
@@ -30,7 +30,7 @@
         android:background="@drawable/checkbutton"
         android:text="Check"
         android:textAlignment="center"
-        android:textSize="42dp"
+        android:textSize="25dp"
         android:typeface="monospace" />
 
     <ImageView
@@ -47,7 +47,7 @@
         android:autoSizeTextType="uniform"
         android:background="@drawable/checkbutton"
         android:text="Home"
-        android:textSize="42dp"
+        android:textSize="35sp"
         android:typeface="monospace" />
 
 </LinearLayout>
